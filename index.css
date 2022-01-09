@@ -1,0 +1,124 @@
+*{
+    color: white;
+    font-size: 24px;
+}
+
+.main{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr 2fr;
+    background-color: beige;
+    max-width: 1200px;
+    width: 100%;
+    height: 100vh;
+    margin: 0px auto;
+    
+}
+
+.conteiner__button{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    list-style: none;
+    padding: 0px;
+}
+
+.button{
+    background-color: chartreuse;
+    border-radius: 30px;
+    height: 50px;
+    width: 100px;
+    transition: 1s;
+}
+
+.button:hover{
+    background-color: yellow;
+    color: black;
+    width: 110px;
+    height: 55px;
+    
+}
+
+.conteiner{
+    display: flex;
+    flex-wrap: wrap;
+    justify-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.conteiner__box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 190px;
+    height: 190px;
+    background-color: darkblue;
+    transition: 2s;
+}
+
+.conteiner__box:hover{
+transform: rotate(180deg);
+}
+
+.animation{
+    display: flex;
+    align-items: center;
+
+}
+
+.animation__circl{
+    width: 30px;
+    height: 30px;
+    background-color:tomato;
+    border-radius: 50%;
+    animation-name: animation;
+    animation-duration: 5s;
+    animation-iteration-count:infinite;
+    animation-direction: alternate;
+}
+
+@keyframes animation {
+    0%{
+       }
+    10%{
+        transform: translate(110px, -60px); 
+        background-color: chartreuse;
+    }
+    20%{
+        transform: translate(220px, 60px); 
+        background-color: blue;
+    }
+    30%{
+        transform: translate(330px, -60px); 
+        background-color: purple;
+    }
+    40%{
+        transform: translate(440px, 60px); 
+        background-color: chartreuse;
+    }
+    50%{
+        transform: translate(550px, -60px); 
+        background-color: rgb(231, 133, 207);
+    }
+    60%{
+        transform: translate(660px, 60px); 
+        background-color: rgb(66, 112, 116);
+    }
+    70%{
+        transform: translate(770px, -60px); 
+        background-color: rgb(6, 49, 4);
+    }
+    80%{
+        transform: translate(880px, 60px); 
+        background-color: rgb(63, 28, 22);
+    }
+    90%{
+        transform: translate(990px, -60px); 
+        background-color: rgb(255, 0, 242);
+    }
+    100%{transform: translate(1100px, 0px); 
+        background-color: rgb(0, 195, 255);
+    }
+}
+
